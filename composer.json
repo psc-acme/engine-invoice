@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/engine-invoice",
+    "description": "Package engine-invoice for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\EngineInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "guzzlehttp/guzzle": "^7.0",
+        "doctrine/collections": "^2.0",
+        "symfony/string": "^7.0",
+        "aws/aws-sdk-php": "^3.332",
+        "predis/predis": "^2.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "mockery/mockery": "^1.6"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
